@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <script src="index.js"></script>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="background-video">
+            <video id="video" autoplay loop muted>
+                <source src="cloud(540p).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="first-container">
+            <div class="search">
+                <div class="search-div">
+                    <input class="search-input" placeholder="E.g. Athens, Greece">
+                    <span class="search-img"><img alt="search icon" src="search-icon.png" width="16px"/></span>
+                    <div class="search-result"></div>
+                </div>
+            </div>
+            <div id="toggle">
+                <label class="toggle-label">
+                    <input type="checkbox" class="toggle-input"/>
+                    <span class="toggle-span">
+                        <span class="toggle-circle">°C</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <h1 id="title"></h1>
+        <div class="grid-container">
+    
+        </div>
+    </body>
+</html>
