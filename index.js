@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // function for api request
-    async function getPosition() {
-        return new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject);
-        });
-    }
+async function getPosition() {
+    return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+    });
+}
 // function for getting data   
 async function getData(){
     const position = await getPosition();
@@ -126,7 +126,7 @@ function writeCol3(day, hour){
     cond.querySelector('.val').innerHTML = Day['condition']['text']
     hum.querySelector('.val').innerHTML = `${Day['humidity']}%`
     chance.querySelector('.val').innerHTML = `${Day['chance_of_rain']}%`
-    
+
     if (toggleCF == 'celcius'){
         wind.querySelector('.val').innerHTML = `${Day['wind_kph']} km/h`
         cloud.querySelector('.val').innerHTML = `${Day['cloud']}%`
